@@ -1,0 +1,24 @@
+{
+  "name": "@signalecho/contracts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "yarn@4.19.0",
+  "engines": {
+    "node": "26.x"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test test/*.test.mjs"
+  },
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}
